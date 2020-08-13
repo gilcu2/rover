@@ -53,15 +53,5 @@ class MarsRoverTest extends AnyFlatSpec with Matchers {
 	    rover.sendCommands("rfff")
 	    rover.coordinates.y should be (1)
 	  }
-	//
-	//  it should "report OK and array of commands if no obstacle was found" in {
-	//    val rover = Rover(12, 42, 'E')
-	//    rover.sendCommands("f") should be ("OK: f")
-	//  }
-	//
-	//  it should "report NOK and array of commands that lead to an obstacle" in {
-	//    val rover = Rover(1, 1, 'N', Planet(10, 10, List(Coordinates(1, 3))))
-	//    rover.sendCommands("ff") should be ("NOK: f")
-	//  }
 
 }
